@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dtu-Sport_IDS.props" />
+</Project>
