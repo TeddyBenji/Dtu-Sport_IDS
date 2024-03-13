@@ -115,3 +115,4 @@ C:\Users\Benjamin\Dtu-Sport_IDS\obj\Debug\net8.0\refint\Dtu-Sport_IDS.dll
 C:\Users\Benjamin\Dtu-Sport_IDS\obj\Debug\net8.0\Dtu-Sport_IDS.pdb
 C:\Users\Benjamin\Dtu-Sport_IDS\obj\Debug\net8.0\Dtu-Sport_IDS.genruntimeconfig.cache
 C:\Users\Benjamin\Dtu-Sport_IDS\obj\Debug\net8.0\ref\Dtu-Sport_IDS.dll
+C:\Users\Benjamin\Dtu-Sport_IDS\obj\Debug\net8.0\Dtu-Sport_IDS.sourcelink.json

@@ -11,3 +11,18 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     }
 
 }
+
+public class SocialHubContext : DbContext
+{
+    public SocialHubContext(DbContextOptions<SocialHubContext> options)
+        : base(options)
+    {
+    }
+
+    public DbSet<UserProfile> UserProfiles { get; set; }
+}
+
+public class UserProfile
+{
+    public string UserId { get; set; }
+}
