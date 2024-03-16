@@ -28,6 +28,7 @@ builder.Services.AddIdentityServer(options =>
     })
     .AddAspNetIdentity<IdentityUser>() // Integrate ASP.NET Core Identity with IdentityServer
     .AddInMemoryApiScopes(Config.ApiScopes)
+    .AddInMemoryApiResources(Config.ApiResources)
     .AddInMemoryClients(Config.Clients)
     .AddProfileService<UserProfileService>()
     .AddDeveloperSigningCredential();

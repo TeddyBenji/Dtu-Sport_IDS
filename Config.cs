@@ -5,6 +5,18 @@ using System.Text;
 public static class Config
 {
     // Define the API scopes your server supports
+
+    public static IEnumerable<ApiResource> ApiResources =>
+    new List<ApiResource>
+    {
+        new ApiResource("api1", "My API")
+        {
+            // Associate the API with the custom API scopes
+            Scopes = { "read", "write", "update", "Delete" }
+        }
+    };
+
+
     public static IEnumerable<ApiScope> ApiScopes =>
         new List<ApiScope>
         {
@@ -38,7 +50,19 @@ public static class Config
                 },
                 // Here we combine the OpenID Connect scopes with the custom API scopes
                 AllowedScopes = { "openid", "profile", "email", "read", "write", "update", "Delete" }
-            }
-        };
-}
+            },
+
+            new Client
+        {
+            ClientId = "SportAPI",
+            ClientName = "APIclint",
+            AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+            ClientSecrets = { new Secret("SportClient".Sha256()) },
+            AllowedScopes = { "openid", "profile", "read", "write", "update", "Delete"},
+            AccessTokenType = AccessTokenType.Jwt,
+            AccessTokenLifetime = 3600,
+            AllowOfflineAccess = true,
+            UpdateAccessTokenClaimsOnRefresh = true
+        },
+};}
 
