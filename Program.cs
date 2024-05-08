@@ -9,6 +9,24 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), 
     ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        policyBuilder =>
+        {
+            policyBuilder.WithOrigins("http://localhost:5242") // Client application URL
+                         .AllowAnyHeader()
+                         .AllowAnyMethod()
+                         .AllowCredentials(); // Allowing credentials is optional based on your security requirements
+        });
+});
+
+
+
+
+
+
 builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
@@ -26,8 +44,9 @@ builder.Services.AddIdentityServer(options =>
     {
         // IdentityServer options configuration
     })
-    .AddAspNetIdentity<IdentityUser>() // Integrate ASP.NET Core Identity with IdentityServer
+    .AddAspNetIdentity<IdentityUser>()
     .AddInMemoryApiScopes(Config.ApiScopes)
+    .AddInMemoryIdentityResources(Config.IdentityResources)  // Ensure this line is correctly added
     .AddInMemoryApiResources(Config.ApiResources)
     .AddInMemoryClients(Config.Clients)
     .AddProfileService<UserProfileService>()
@@ -43,9 +62,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseRouting();
-app.UseAuthentication(); // This will configure the app to use authentication
-app.UseIdentityServer(); // This will configure the app to use IdentityServer
-app.UseAuthorization(); // This must be called after UseRouting and before UseEndpoints
+app.UseCors(builder =>
+    builder.WithOrigins("https://localhost:7033")
+           .AllowAnyMethod()
+           .AllowAnyHeader()
+           .AllowCredentials());
+
+app.UseAuthentication();
+app.UseIdentityServer();
+app.UseAuthorization();
 
 app.MapControllers();
 // Seed roles

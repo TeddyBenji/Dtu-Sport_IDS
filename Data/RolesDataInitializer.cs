@@ -11,6 +11,12 @@ public static class RolesDataInitializer
             await roleManager.CreateAsync(userRole);
         }
 
+        if (!await roleManager.RoleExistsAsync("Trainer"))
+        {
+            var trainerRole = new IdentityRole("Trainer");
+            await roleManager.CreateAsync(trainerRole);
+        }
+
         if (!await roleManager.RoleExistsAsync("Admin"))
         {
             var adminRole = new IdentityRole("Admin");

@@ -4,7 +4,7 @@ using System.Text;
 
 public static class Config
 {
-    // Define the API scopes your server supports
+    // Define API scopes
 
     public static IEnumerable<ApiResource> ApiResources =>
     new List<ApiResource>
@@ -63,6 +63,20 @@ public static class Config
             AccessTokenLifetime = 3600,
             AllowOfflineAccess = true,
             UpdateAccessTokenClaimsOnRefresh = true
+        },
+
+        new Client
+        {
+            ClientId = "SportUI",
+            ClientName = "APIclint",
+            AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+            ClientSecrets = { new Secret("DtuSport".Sha256()) },
+            AllowedScopes = { "openid", "profile", "read", "write", "update", "Delete"},
+            AccessTokenType = AccessTokenType.Jwt,
+            AccessTokenLifetime = 3600,
+            AllowOfflineAccess = true,
+            UpdateAccessTokenClaimsOnRefresh = true,
+            AllowedCorsOrigins = { "https://localhost:7033" }
         },
 };}
 
