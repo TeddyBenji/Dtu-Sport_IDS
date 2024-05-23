@@ -28,6 +28,8 @@ namespace Dtu_Sport_IDS.Services
                     roleClaims.Add(new Claim(ClaimTypes.Role, role));
                 }
                 context.IssuedClaims.AddRange(roleClaims);
+
+                context.IssuedClaims.Add(new Claim(ClaimTypes.Name, user.UserName));
             }
         }
 
