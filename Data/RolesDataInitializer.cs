@@ -22,5 +22,13 @@ public static class RolesDataInitializer
             var adminRole = new IdentityRole("Admin");
             await roleManager.CreateAsync(adminRole);
         }
+
+        if (!await roleManager.RoleExistsAsync("ClubOwner"))
+        {
+            var adminRole = new IdentityRole("ClubOwner");
+            await roleManager.CreateAsync(adminRole);
+        }
+
+
     }
 }

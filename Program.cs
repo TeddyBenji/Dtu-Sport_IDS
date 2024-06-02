@@ -39,14 +39,14 @@ builder.Services.AddScoped<IUserService, UserService>();
 
 
 
-// Add IdentityServer
+
 builder.Services.AddIdentityServer(options =>
     {
-        // IdentityServer options configuration
+        
     })
     .AddAspNetIdentity<IdentityUser>()
     .AddInMemoryApiScopes(Config.ApiScopes)
-    .AddInMemoryIdentityResources(Config.IdentityResources)  // Ensure this line is correctly added
+    .AddInMemoryIdentityResources(Config.IdentityResources)  
     .AddInMemoryApiResources(Config.ApiResources)
     .AddInMemoryClients(Config.Clients)
     .AddProfileService<UserProfileService>()
@@ -73,7 +73,7 @@ app.UseIdentityServer();
 app.UseAuthorization();
 
 app.MapControllers();
-// Seed roles
+
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();

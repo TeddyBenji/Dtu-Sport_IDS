@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:services\\userprofileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\data\\rolesdatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:data\\rolesdatainitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|solutionrelative:controllers\\rolecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30942FC3-19E1-438A-80B8-0950954DE919}|Dtu-Sport_IDS.csproj|c:\\users\\benjamin\\dtu-sport_ids\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -26,50 +38,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "RolesDataInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Data\\RolesDataInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\RolesDataInitializer.cs",
+              "ToolTip": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Data\\RolesDataInitializer.cs",
+              "RelativeToolTip": "Data\\RolesDataInitializer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T20:26:39.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T11:29:56.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "RoleController.cs",
               "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Controllers\\RoleController.cs",
               "RelativeDocumentMoniker": "Controllers\\RoleController.cs",
               "ToolTip": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Controllers\\RoleController.cs",
               "RelativeToolTip": "Controllers\\RoleController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T11:54:54.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-23T11:54:54.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserProfileService.cs",
               "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Services\\UserProfileService.cs",
               "RelativeDocumentMoniker": "Services\\UserProfileService.cs",
               "ToolTip": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Services\\UserProfileService.cs",
               "RelativeToolTip": "Services\\UserProfileService.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAA3wCEAAAAJAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAA0AAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-10T17:15:52.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-10T17:15:52.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Config.cs",
               "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Config.cs",
               "RelativeDocumentMoniker": "Config.cs",
               "ToolTip": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Config.cs",
               "RelativeToolTip": "Config.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T16:58:05.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Services\\UserService.cs",
+              "RelativeToolTip": "Services\\UserService.cs",
+              "ViewState": "AQIAAHkAAAAAAAAAAADwv0sAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T20:27:49.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Benjamin\\Dtu-Sport_IDS\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",

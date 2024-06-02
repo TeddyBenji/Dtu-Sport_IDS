@@ -64,7 +64,7 @@ public class UserService : IUserService
         {
             var response = new ServiceResponse<string>();
 
-            // Find the user by username
+            
             var user = await _userManager.FindByNameAsync(username);
             if (user == null)
             {
@@ -73,7 +73,7 @@ public class UserService : IUserService
                 return response;
             }
 
-            // Attempt to delete the user
+            
             var result = await _userManager.DeleteAsync(user);
             if (result.Succeeded)
             {

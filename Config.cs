@@ -4,14 +4,14 @@ using System.Text;
 
 public static class Config
 {
-    // Define API scopes
+   
 
     public static IEnumerable<ApiResource> ApiResources =>
     new List<ApiResource>
     {
         new ApiResource("api1", "My API")
         {
-            // Associate the API with the custom API scopes
+            
             Scopes = { "read", "write", "update", "Delete" }
         }
     };
@@ -26,7 +26,7 @@ public static class Config
             new ApiScope("Delete", "Delete access to API")
         };
 
-    // Define the identity resources (standard OpenID Connect scopes)
+    
     public static IEnumerable<IdentityResource> IdentityResources =>
         new List<IdentityResource>
         {
@@ -35,7 +35,7 @@ public static class Config
             new IdentityResources.Email()
         };
 
-    // Configure clients that are allowed to access the server
+    
     public static IEnumerable<Client> Clients =>
         new List<Client>
         {
@@ -48,7 +48,7 @@ public static class Config
                 {
                     new Secret("secret".Sha256())
                 },
-                // Here we combine the OpenID Connect scopes with the custom API scopes
+                
                 AllowedScopes = { "openid", "profile", "email", "read", "write", "update", "Delete" }
             },
 
